@@ -8,3 +8,10 @@ body{
     // }
     overflow-y: scroll;
 }
+
+html,
+body {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
