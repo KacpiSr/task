@@ -1,0 +1,9 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    font-family: $raleway;
+    color: $black;
+    @media (max-width: $md){
+        overflow-y: scroll;
+    }
+}

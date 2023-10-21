@@ -1,0 +1,259 @@
+.hero {
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    max-width: 1440px;
+    width: 100%;
+    height: 780px;
+    opacity: 0.5;
+    top: 60px;
+    background-image: linear-gradient(to bottom, #f5f5f5, #dedede);
+    @media (max-width: $xxxl){
+      max-width: 1130px;
+    }
+    @media (max-width: $xxl){
+      max-width: 1020px;
+    }
+    @media (max-width: $xl){
+      max-width: 1160px;
+    }
+    @media (max-width: $xlg){
+      // max-width: 1020px;
+      max-width: 800px;
+    }
+    @media (max-width: $md){
+      display: none;
+    }
+  }
+
+  &__container {
+    // gap: 164px;
+    gap: 95px;
+    @media (max-width: $xxxl) {
+      gap: 56px;
+    }
+    @media (max-width: $xxl) {
+      // gap: 200px;
+      gap: 96px;
+    }
+    // @media (max-width: 992px) {
+    //   gap: 48px;
+    // }
+    @media (max-width: $xlg){
+      gap: 90px;
+      margin-left: 90px;
+    }
+    @media (max-width: $lg) {
+      gap: 48px;
+    }
+    @media (max-width: $md){
+      gap: 20px;
+      margin-left: 0;
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  // HERO MAIN
+
+  &__main {
+    max-width: 287px;
+    margin-top: 80px;
+    z-index: 999;
+    @media (max-width: $xxxl){
+      margin-left: 20px;
+    }
+    @media (max-width: $xxl) {
+      margin-left: 0;
+    }
+    @media (max-width: $md){
+      margin-left: 20px;
+      margin-top: 0;
+    }
+  }
+  &__top-heading {
+    line-height: 0.86;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+  }
+  &__heading {
+    margin-top: 7.5px;
+    margin-bottom: 16px;
+    letter-spacing: -1.1px;
+    font-family: $playfair;
+  }
+  &__bottom-heading {
+    margin-bottom: 35px;
+    line-height: 1.73;
+  }
+  &__see-all {
+    line-height: 1.01;
+    letter-spacing: 1.65px;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: transparent;
+    @include border-custom-link(28px, 13.5px, 1px, $black, $black);
+    @extend .button-hover-styles;
+  }
+
+  // SWIPER
+  &__swiper-holder {
+    width: 100%;
+    position: relative;
+  }
+  &__swiper {
+    position: absolute;
+    width: 100%;
+  }
+  &__swiper-slide {
+    width: 100%;
+    height: 490px;
+    margin: 0 0 23px;
+    // overflow: hidden;
+    text-decoration: none;
+    color: $black;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+    @media (max-width: $md){
+      height: auto;
+    }
+    @media (min-width: $md){
+      &:hover {
+        .hero__swiper-photo {
+          height: 260px;
+          transition: 0.6s ease;
+        }
+      }
+    }
+  }
+  &__swiper-photo {
+    background-color: green;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 430px;
+    transition: 0.6s ease;
+  }
+  &__img-box {
+    position: relative;
+    color: $white;
+  }
+  &__price {
+    padding: 0 15px 10px 19px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $black;
+    display: flex;
+    gap: 6px;
+    align-items: baseline;
+    // line-height: 1.86;
+  }
+  &__value {
+    font-family: $playfair;
+  }
+  &__include {
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1.35px;
+    // line-height: 1.89;
+    background: $black;
+    text-transform: uppercase;
+    padding: 10.5px 18px 10.5px 22px;
+  }
+
+  &__swiper-info {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 28px;
+    @media (max-width: $lg){
+      padding-top: 20px;
+    }
+    @media (max-width: $md){
+      margin-left: 15px;
+    }
+  }
+  &__slide-heading {
+    font-family: $playfair;
+    line-height: 1.36;
+    letter-spacing: -0.84px;
+    @media (max-width: $lg){
+      font-size: 24px;
+    }
+  }
+  &__swiper-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    // line-height: 3;
+    letter-spacing: 0.3px;
+  }
+
+  &__days-info,
+  &__food-info {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  &__offer-link {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: $brown;
+    line-height: 1.37;
+    // text-decoration: underline $brown;
+    span {
+      position: relative;
+      display: block;
+      &::after {
+        content: "";
+        height: 1px;
+        position: absolute;
+        background: $brown;
+        width: 100%;
+        left: 0;
+        bottom: 4px;
+        max-width: 155px;
+      }
+    }
+  }
+
+
+
+
+  //HOVER CIRCLE ON SLIDE
+  &__hover-circle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: $white;
+    right: -25px;
+    top: 187px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: $md){
+      right: 5px;
+      top: 407px;
+    }
+  }
+  &__arrow-circle{
+    width: 40px;
+    height: 40px;
+    // background: $black;
+    border: 1px dashed $black;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+

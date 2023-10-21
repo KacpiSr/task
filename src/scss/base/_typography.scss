@@ -1,0 +1,88 @@
+h1,
+.f-h1 {
+  font-size: 55px;
+  line-height: 1.18;
+  font-weight: 700;
+  margin: 0;
+  @media (max-width: $lg) {
+    font-size: 42px;
+  }
+}
+h2,
+.f-h2 {
+  font-size: 48px;
+}
+h3,
+.f-h3 {
+  font-size: 32px;
+}
+h4,
+.f-h4 {
+  font-size: 28px;
+}
+h5,
+.f-h5 {
+  font-size: 20px;
+}
+h6,
+.f-h6 {
+  font-size: 13px;
+}
+
+// EACH-LOOP FONT-WEIGHT
+$font-weights: (
+  fw100: 100,
+  fw200: 200,
+  fw300: 300,
+  fw400: 400,
+  fw500: 500,
+  fw600: 600,
+  fw700: 700,
+  fw800: 800,
+  fw900: 900,
+);
+
+@each $class, $weight in $font-weights {
+  .hero__top-heading--#{$class},
+  .hero__heading--#{$class},
+  .hero__bottom-heading--#{$class},
+  .hero__see-all--#{$class},
+  .hero__slide-heading--#{$class},
+  .hero__days-info--#{$class},
+  .hero__food-info--#{$class},
+  .hero__offer-link--#{$class},
+  .hero__value--#{$class},
+  .hero__price--#{$class},
+  .hero__include--#{$class} {
+    font-weight: #{$weight};
+  }
+}
+
+// EACH-LOOP FONT-SIZE
+$font-sizes: (
+  fs9: 9px,
+  fs11: 11px,
+  fs13: 13px,
+  fs14: 14px,
+  fs15: 15px,
+  fs19: 19px,
+  fs26: 26px,
+  fs28: 28px,
+);
+
+@each $class, $size in $font-sizes {
+  .hero__top-heading--#{$class},
+  .hero__heading--#{$class},
+  .hero__bottom-heading--#{$class},
+  .hero__see-all--#{$class},
+  .hero__slide-heading--#{$class},
+  .hero__days-info--#{$class},
+  .hero__food-info--#{$class},
+  .hero__offer-link--#{$class},
+  .hero__value--#{$class},
+  .hero__price--#{$class},
+  .hero__include--#{$class},
+  .hero__currency--#{$class} {
+    font-size: $size;
+  }
+}
