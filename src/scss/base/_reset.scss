@@ -1,15 +1,16 @@
 body{
+    // position:relative;
     margin: 0;
-    // overflow: hidden;
+    // overflow-x:hidden;
     font-family: $raleway;
     color: $black;
-    // @media (max-width: $md){
-    //     overflow-y: scroll;
-    // }
-    overflow-y: scroll;
+    overflow: hidden;
+    @media (min-width: 1px){
+        overflow-y: scroll;
+    }
 }
-
-html, body {
-	position:relative;
-	overflow-x:hidden;
-}
+// @media screen and (-webkit-min-device-pixel-ratio:0) {
+//     body {
+//       overflow: hidden;
+//     }
+//   }
