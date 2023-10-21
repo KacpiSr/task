@@ -3,7 +3,8 @@ body{
     overflow: hidden;
     font-family: $raleway;
     color: $black;
-    @media (max-width: $md){
-        overflow-y: scroll;
-    }
+    // @media (max-width: $md){
+    //     overflow-y: scroll;
+    // }
+    overflow-y: scroll;
 }
