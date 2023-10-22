@@ -15,12 +15,9 @@ html,body{
     }
   }
 
-  /* Ukryj pionowy pasek przewijania */
 ::-webkit-scrollbar {
     width: 0rem;
 }
-
-/* Ukryj poziomy pasek przewijania */
 ::-webkit-scrollbar {
     height: 0rem;
 }
