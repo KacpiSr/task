@@ -40,7 +40,7 @@ const swiper = new Swiper('.swiper', {
   function manageSlideStyle(action) {
     const activeSlide = swiper.slides[swiper.activeIndex];
     const photo = activeSlide.querySelector('.hero__swiper-photo');
-    if (window.matchMedia('(min-width: 769px) and (max-width: 1360px)').matches) {
+    if (window.matchMedia('(min-width: 769px) and (max-width: 1250px)').matches) {
       if (photo) {
         if (action === 'activate') {
           photo.style.height = '260px';
