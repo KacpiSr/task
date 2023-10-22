@@ -19,14 +19,16 @@ swiperSlides.forEach((slide) => {
   if (window.innerWidth <= 768) {
     hoverCircle.style.opacity = "1";
   }
-  slide.addEventListener("mouseenter", () => {
-    hoverCircle.style.transition = "opacity 0.3s";
-    hoverCircle.style.opacity = "1";
-  });
-  slide.addEventListener("mouseleave", () => {
-    hoverCircle.style.transition = "opacity 0.3s";
-    hoverCircle.style.opacity = "0";
-  });
+  if (window.innerWidth > 1024) {
+    slide.addEventListener("mouseenter", () => {
+      hoverCircle.style.transition = "opacity 0.3s";
+      hoverCircle.style.opacity = "1";
+    });
+    slide.addEventListener("mouseleave", () => {
+      hoverCircle.style.transition = "opacity 0.3s";
+      hoverCircle.style.opacity = "0";
+    });
+  }
 });
 
 

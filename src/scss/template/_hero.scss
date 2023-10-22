@@ -120,13 +120,14 @@
     @media (max-width: $md){
       height: auto;
     }
-    @media (min-width: $md){
+    @media (min-width: $lg + 1px){
       &:hover {
         .hero__swiper-photo {
           height: 260px;
           transition: 0.6s ease;
         }
       }
+      height: 500px;
     }
   }
   &__swiper-photo {
@@ -142,7 +143,7 @@
     color: $white;
   }
   &__price {
-    padding: 0 15px 10px 19px;
+    padding: 14.5px 15px 14.5px 19px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -150,7 +151,7 @@
     display: flex;
     gap: 6px;
     align-items: baseline;
-    // line-height: 1.86;
+    line-height: 11.1px;
   }
   &__value {
     font-family: $playfair;
@@ -172,7 +173,7 @@
     justify-content: end;
     flex-direction: column;
     gap: 35px;
-    padding-top: 28px;
+    padding-top: 23px;
     @media (max-width: $lg){
       padding-top: 20px;
     }
@@ -192,7 +193,7 @@
     display: flex;
     flex-direction: column;
     gap: 27px;
-    // line-height: 3;
+    // line-height: 45px;
     letter-spacing: 0.3px;
   }
 
@@ -208,7 +209,7 @@
     align-items: center;
     gap: 13px;
     color: $brown;
-    line-height: 1.37;
+    line-height: 26px;
     // text-decoration: underline $brown;
     span {
       position: relative;
@@ -244,6 +245,11 @@
     @media (max-width: $md){
       right: 5px;
       top: 407px;
+    }
+    @media (min-width: $md) and (max-width: $lg + 1px){
+      // display: none;
+      // visibility: hidden;
+      opacity: 0;
     }
   }
   &__arrow-circle{
