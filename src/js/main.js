@@ -35,8 +35,28 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 3.2,
     },
     1480: {
-      slidesPerView: 3.15,
+      slidesPerView: 3.13,
     }
 
   }
 });
+
+// AUTO HOVER MOBILE
+function manageSlideStyle(action) {
+  const activeSlide = swiper.slides[swiper.activeIndex];
+  const photo = activeSlide.querySelector('.hero__swiper-photo');
+  if (window.matchMedia('(min-width: 769px) and (max-width: 1024px)').matches) {
+    if (photo) {
+      if (action === 'activate') {
+        photo.style.height = '260px';
+        photo.style.transition = '0.6s ease';
+      } else if (action === 'reset') {
+        photo.style.height = '';
+        photo.style.transition = '';
+      }
+    }
+  }
+}
+manageSlideStyle('activate');
+swiper.on('slideChange', () => manageSlideStyle('activate'));
+swiper.on('sliderMove', () => manageSlideStyle('reset'));

@@ -1,7 +1,6 @@
 body{
-    // position:relative;
+    position:relative;
     margin: 0;
-    // overflow-x:hidden;
     font-family: $raleway;
     color: $black;
     overflow: hidden;
@@ -9,8 +8,8 @@ body{
         overflow-y: scroll;
     }
 }
-// @media screen and (-webkit-min-device-pixel-ratio:0) {
-//     body {
-//       overflow: hidden;
-//     }
-//   }
+@media (min-width:$lg) and (-webkit-min-device-pixel-ratio:0) {
+    body {
+      overflow: hidden;
+    }
+  }
