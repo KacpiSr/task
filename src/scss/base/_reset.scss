@@ -11,6 +11,7 @@ html,body{
 }
 @media (min-width:$lg) and (-webkit-min-device-pixel-ratio:0) {
     html,body {
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: scroll;
     }
   }
