@@ -1,0 +1,109 @@
+.questions {
+  background-color: $ash;
+  padding: 94px 0 108px 0;
+  margin-top: 110px;
+  margin-bottom: 33px;
+  @media (max-width: $lg) {
+    padding: 50px 0 108px 0;
+    margin-top: 60px;
+  }
+  &__heading {
+    // font-size: 50px;
+    // font-weight: 900;
+    line-height: 50px;
+    color: $sea-dark;
+    margin-bottom: 40px;
+    text-align: center;
+    @media (max-width: $sm) {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    padding: 56px 70px 46px;
+    background-color: $white;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 3px 30px 0 rgba(212, 212, 212, 0.33);
+    border: solid 2px $cyan;
+    margin: 0 auto;
+    border-radius: 20px;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: $lg) {
+      padding: 25px;
+    }
+    @media (max-width: $sm) {
+      padding: 15px;
+    }
+  }
+
+  &__item {
+    transition: all 0.3s;
+    color: $sea-dark;
+    line-height: 50px;
+    @media (max-width: $lg) {
+      font-size: 25px;
+    }
+    @media (max-width: $md) {
+      line-height: 30px;
+      font-size: 22px;
+    }
+    @media (max-width: $sm) {
+      font-size: 18px;
+    }
+  }
+
+  &__item-heading {
+    // font-size: 35px;
+    // font-weight: 900;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: space-between;
+    @media (max-width: $md) {
+      gap: 20px;
+      align-items: center;
+    }
+    @media (max-width: $sm) {
+      gap: 10px;
+    }
+  }
+
+  &__content {
+    // font-size: 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    color: $black;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    p {
+      margin: 0;
+    }
+    @media (max-width: $lg) {
+      gap: 20px;
+      font-size: 20px;
+    }
+    @media (max-width: $md) {
+      font-size: 18px;
+      line-height: 35px;
+    }
+  }
+
+  &__arrow {
+    transform: rotate(180deg);
+    @media (max-width: $md) {
+      height: 40px;
+    }
+    @media (max-width: $sm) {
+      height: 30px;
+    }
+  }
+}

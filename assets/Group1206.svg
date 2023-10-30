@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="562" height="123" viewBox="0 0 562 123">
+    <defs>
+        <filter id="lwelhgpjpa" x="0" y="0" width="562" height="123" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="m2iiasa3eb" x="126" y="31" width="398" height="61" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur-2"/>
+            <feFlood flood-opacity=".6"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="4ss4sebhmc" x="39" y="20" width="84" height="84" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur-3"/>
+            <feFlood flood-opacity=".6"/>
+            <feComposite operator="in" in2="blur-3"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="Group 1206">
+        <g data-name="Group 39">
+            <g style="filter:url(#lwelhgpjpa)">
+                <g data-name="Rectangle 9" transform="translate(9 6)" style="stroke:#165b5b;stroke-width:4px;fill:#30aeac">
+                    <rect width="544" height="105" rx="20" style="stroke:none"/>
+                    <rect x="2" y="2" width="540" height="101" rx="18" style="fill:none"/>
+                </g>
+            </g>
+            <g style="filter:url(#m2iiasa3eb)">
+                <text data-name="Click or tap for sound" transform="translate(135 37)" style="font-size:36px;font-family:Chivo-Black,Chivo;font-weight:800;fill:#fff"><tspan x="0" y="34">Click or tap for sound</tspan></text>
+            </g>
+        </g>
+        <g style="filter:url(#4ss4sebhmc)">
+            <circle data-name="Ellipse 2" cx="33" cy="33" r="33" transform="translate(48 26)" style="fill:#fff"/>
+        </g>
+        <path data-name="Polygon 1" d="m14 0 14 24H0z" transform="rotate(90 26 71)" style="fill:#30aeac"/>
+    </g>
+</svg>

@@ -1,8 +1,14 @@
+@import "/node_modules/bootstrap/scss/bootstrap";
 @import 'base/variables';
-@import 'base/mixins';
-@import 'base/extends';
 @import 'base/typography';
-@import 'base/reset';
-@import 'base/grid';
 @import 'template/hero';
+@import 'template/offer';
+@import 'template/prizes';
+@import 'template/bonuses';
+@import 'template/delivery';
+@import 'template/opinions';
+@import 'template/ingredients';
+@import 'template/questions';
+@import 'template/footer';
+@import 'base/grid';
 

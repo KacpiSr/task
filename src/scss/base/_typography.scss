@@ -1,12 +1,12 @@
 h1,
 .f-h1 {
-  font-size: 55px;
-  line-height: 1.18;
-  font-weight: 700;
+  font-size: 51px;
+  font-weight: 900;
+  line-height: 61px;
   margin: 0;
-  @media (max-width: $lg) {
-    font-size: 42px;
-  }
+  //   @media (max-width: $lg) {
+  //     font-size: 42px;
+  //   }
 }
 h2,
 .f-h2 {
@@ -43,46 +43,104 @@ $font-weights: (
 );
 
 @each $class, $weight in $font-weights {
-  .hero__top-heading--#{$class},
-  .hero__heading--#{$class},
-  .hero__bottom-heading--#{$class},
-  .hero__see-all--#{$class},
-  .hero__slide-heading--#{$class},
-  .hero__days-info--#{$class},
-  .hero__food-info--#{$class},
-  .hero__offer-link--#{$class},
-  .hero__value--#{$class},
-  .hero__price--#{$class},
-  .hero__include--#{$class} {
+  //OFFER
+  .offer__timer-heading--#{$class},
+  .offer__timer--#{$class},
+  .offer__heading--#{$class},
+  .offer__bottom-heading--#{$class},
+  .offer__price--#{$class},
+  .offer__cart--#{$class},
+  .offer__discount--#{$class},
+  .offer__pack--#{$class},
+  .offer__bonus-box--#{$class},
+  .offer__review-heading--#{$class},
+  .offer__review-rating-numbers--#{$class},
+  .offer__review-sum--#{$class},
+  //PRIZES
+  .prizes__heading--#{$class},
+  .prizes__text-area--#{$class},
+  //BONUSES
+  .bonuses__heading--#{$class},
+  .bonuses__photo-heading--#{$class},
+  .bonuses__bottom-heading--#{$class},
+  .bonuses__text-area--#{$class},
+  //DELIVERY
+  .delivery__heading--#{$class},
+  .delivery__text-area--#{$class},
+  //OPINIONS
+  .opinions__heading--#{$class},
+  .opinions__verify--#{$class},
+  .opinions__text-area--#{$class},
+  .opinions__rating-box--#{$class},
+  //INGREDIENTS
+  .ingredients__item--#{$class},
+  //QUESTIONS
+  .questions__heading--#{$class},
+  .questions__item-heading--#{$class},
+  .questions__content--#{$class},
+  //FOOTER
+  .f-main__links--#{$class},
+  .f-main__bottom-content--#{$class} {
     font-weight: #{$weight};
   }
 }
 
 // EACH-LOOP FONT-SIZE
+
 $font-sizes: (
-  fs9: 9px,
-  fs11: 11px,
-  fs13: 13px,
+  fs12: 12px,
   fs14: 14px,
-  fs15: 15px,
-  fs19: 19px,
-  fs26: 26px,
-  fs28: 28px,
+  fs18: 18px,
+  fs20: 20px,
+  fs25: 25px,
+  fs30: 30px,
+  fs32: 32px,
+  fs35: 35px,
+  fs50: 50px,
+  fs51: 51px,
+  fs90: 90px,
 );
 
 @each $class, $size in $font-sizes {
-  .hero__top-heading--#{$class},
-  .hero__heading--#{$class},
-  .hero__bottom-heading--#{$class},
-  .hero__see-all--#{$class},
-  .hero__slide-heading--#{$class},
-  .hero__days-info--#{$class},
-  .hero__food-info--#{$class},
-  .hero__offer-link--#{$class},
-  .hero__value--#{$class},
-  .hero__price--#{$class},
-  .hero__include--#{$class},
-  .hero__currency--#{$class} {
+  //OFFER
+  .offer__timer-heading--#{$class},
+  .offer__timer--#{$class},
+  .offer__heading--#{$class},
+  .offer__bottom-heading--#{$class},
+  .offer__price--#{$class},
+  .offer__cart--#{$class},
+  .offer__discount--#{$class},
+  .offer__pack--#{$class},
+  .offer__bonus-box--#{$class}, 
+  .offer__review-heading--#{$class}, 
+  .offer__review-rating-numbers--#{$class}, 
+  .offer__review-sum--#{$class}, 
+  //PRIZES
+  .prizes__heading--#{$class}, 
+  .prizes__text-area--#{$class}, 
+  //BONUSES
+  .bonuses__heading--#{$class}, 
+  .bonuses__photo-heading--#{$class}, 
+  .bonuses__bottom-heading--#{$class}, 
+  .bonuses__text-area--#{$class}, 
+  //DELIVERY
+  .delivery__heading--#{$class}, 
+  .delivery__text-area--#{$class},
+  //OPINIONS
+  .opinions__heading--#{$class},
+  .opinions__verify--#{$class},
+  .opinions__text-area--#{$class},
+  .opinions__rating-box--#{$class},
+  //INGREDIENTS
+  .ingredients__item--#{$class},
+  //QUESTIONS
+  .questions__heading--#{$class},
+  .questions__item-heading--#{$class},
+  .questions__content--#{$class},
+  //FOOTER
+  .f-main__info-item--#{$class},
+  .f-main__links--#{$class},
+  .f-main__bottom-content--#{$class} {
     font-size: $size;
   }
 }

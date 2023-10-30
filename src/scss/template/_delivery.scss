@@ -1,0 +1,43 @@
+.delivery{
+    background-color: $ash;
+    padding: 37px 0 49px 0;
+    &__box{
+        display: flex;
+        gap: 62px;
+        // justify-content: center;
+        align-items: center;
+        @media (max-width: $md){
+            flex-direction: column;
+            gap: 40px;
+          }
+    }
+
+    &__content-box{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__heading{
+        // font-size: 35px;
+        // font-weight: bold;
+        // font-weight: 700;
+        line-height: 50px;
+        color: $sea-dark;
+        @media (max-width: $lg){
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+
+    &__text-area{
+        // font-size: 25px;
+        line-height: 28.8px;
+        @media (max-width: $lg){
+            font-size: 20px;
+        }
+        @media (max-width: $md){
+            font-size: 18px;
+          }
+    }
+}

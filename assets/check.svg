@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27.621" height="24" viewBox="0 0 27.621 24">
+    <g data-name="Group 677">
+        <g data-name="Ellipse 3" style="stroke:#fff;stroke-width:3px;fill:none">
+            <circle cx="12" cy="12" r="12" style="stroke:none"/>
+            <circle cx="12" cy="12" r="10.5" style="fill:none"/>
+        </g>
+        <path data-name="Line 1" transform="translate(7.5 9.5)" style="stroke-linecap:round;stroke:#fff;stroke-width:3px;fill:none" d="m0 0 5 5.5"/>
+        <path data-name="Line 2" transform="translate(12.5 2.5)" style="stroke-linecap:round;stroke:#fff;stroke-width:3px;fill:none" d="M13 0 0 12.5"/>
+    </g>
+</svg>

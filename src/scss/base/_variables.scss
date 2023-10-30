@@ -1,24 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-/* FONTS */
-$playfair: "Playfair Display", serif;
-$raleway: "Raleway", sans-serif;
+// /* FONTS */
+$chivo: 'Chivo', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
 
 /* COLORS */
-$black: #242424;
+$sea-light: #30aeac;
+$sea-medium: #227070;
+$sea-dark: #165b5b;
+$sea-hard:#0e4444;
+$sea-green: #82a8a8;
+$sea-dark-green: #227070;
+$grey: #fcfcfc;
 $white: #ffffff;
-$brown: #c4975e;
-$grey: #f5f5f5;
+$cyan: #cbecec;
+$gold: #d19118;
+$gold-1: #ffe47a;
+$gold-2: #ffb62b;
+$gold-3: #fff1b9;
+$gold-dark: #c1a53bfa;
+$gold-dark-2: #c9ab3a;
+$red: #bf1212;
+$dark-red: #501515;
+$black: #000000;
+$ash: #ececec;
+$light-grey: #979797;
 
-/* RESOLUTIONS */
+/*   Resolution  */
 $hd: 1921px;
-$xxxl: 1600px;
-$xxl: 1440px;
-$xl: 1360px;
-$xlg: 1199px;
-$lg: 1024px;
-$md: 769px;
-$sm: 575px; 
-$xsm: 375px;
-$xxsm: 360px;
+$xxxl: 1679px;
+$xxl: 1399px;
+$xl: 1199px;
+$lg: 991px;
+$md: 767px;
+$sm: 575px;
+
+
+
+// /* RESOLUTIONS */
+// $hd: 1921px;
+// $xxxl: 1600px;
+// $xxl: 1440px;
+// $xl: 1360px;
+// $xlg: 1199px;
+// $lg: 1024px;
+// $md: 769px;
+// $sm: 575px; 
+// $xsm: 375px;
+// $xxsm: 360px;

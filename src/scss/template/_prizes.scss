@@ -1,0 +1,68 @@
+.prizes {
+  @media (max-width: $md) {
+    padding-bottom: 50px;
+  }
+  background-color: $sea-light;
+  margin-top: 142px;
+  padding-top: 194px;
+  padding-bottom: 86px;
+  position: relative;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logo {
+    position: absolute;
+    top: -94px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__heading {
+    //  font-size: 35px;
+    //  font-weight: bold;
+    line-height: 50px;
+    @media (max-width: $lg) {
+      font-size: 25px;
+    }
+    @media (max-width: $md) {
+      font-size: 22px;
+    }
+    @media (max-width: $sm) {
+      line-height: 35px;
+      text-align: center;
+    }
+  }
+  &__text-area {
+    //  font-size: 18px;
+    line-height: 28.8px;
+    text-align: center;
+    margin-bottom: 57px;
+    margin-top: 27px;
+    @media (max-width: $md) {
+      margin-top: 10px;
+    }
+  }
+
+  &__awards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 53px; //zdjecia zle zrobione
+    @media (max-width: $lg) {
+      gap: 0;
+    }
+    @media (max-width: $md) {
+      img {
+        height: 140px;
+      }
+    }
+    @media (max-width: $md) {
+      img {
+        height: 90px;
+      }
+    }
+  }
+}
