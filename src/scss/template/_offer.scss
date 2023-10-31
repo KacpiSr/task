@@ -306,7 +306,7 @@
   &__bonus,
   &__shipping {
     border-radius: 11px;
-    text-shadow: 0 2px 3px #165b5b;
+    text-shadow: 0 2px 3px $sea-dark;
     font-family: $open-sans;
     line-height: 27px;
     letter-spacing: -0.3px;
@@ -358,10 +358,10 @@
     max-width: 370px;
     width: 100%;
     left: 0;
-    background-color: #227070;
+    background-color: $sea-dark-green;
     border-radius: 20px;
     padding: 16px;
-    color: #ffffff;
+    color: $white;
     line-height: 24px;
     height: 100px;
     @media (max-width: $lg) {
