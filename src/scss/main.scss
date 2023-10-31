@@ -1,6 +1,11 @@
 @import "/node_modules/bootstrap/scss/bootstrap";
+
+//BASE
 @import 'base/variables';
 @import 'base/typography';
+@import 'base/grid';
+
+//TEMPLATE
 @import 'template/hero';
 @import 'template/offer';
 @import 'template/prizes';
@@ -10,5 +15,4 @@
 @import 'template/ingredients';
 @import 'template/questions';
 @import 'template/footer';
-@import 'base/grid';
 

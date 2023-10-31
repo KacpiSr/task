@@ -6,28 +6,24 @@
   padding-bottom: 19px;
   margin-top: 137px;
   margin-bottom: 32px;
-  @media (max-width: $sm){
+  @media (max-width: $sm) {
     padding-top: 150px;
   }
-
   &__box {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   &__product {
     position: absolute;
     top: -137px;
     left: 50%;
     transform: translateX(-50%);
-    @media (max-width: $sm){
-        height: 250px;
+    @media (max-width: $sm) {
+      height: 250px;
     }
   }
-
   &__item {
-    // font-size: 30px;
     line-height: 28.8px;
     display: flex;
     align-items: center;
@@ -41,13 +37,13 @@
     @media (max-width: $md) {
       font-size: 20px;
       gap: 10px;
-      img{
+      img {
         height: 50px;
       }
     }
     @media (max-width: $sm) {
       font-size: 18px;
-      img{
+      img {
         height: 35px;
       }
     }

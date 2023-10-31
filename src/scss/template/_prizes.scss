@@ -21,8 +21,6 @@
     transform: translateX(-50%);
   }
   &__heading {
-    //  font-size: 35px;
-    //  font-weight: bold;
     line-height: 50px;
     @media (max-width: $lg) {
       font-size: 25px;
@@ -36,7 +34,6 @@
     }
   }
   &__text-area {
-    //  font-size: 18px;
     line-height: 28.8px;
     text-align: center;
     margin-bottom: 57px;
@@ -45,12 +42,11 @@
       margin-top: 10px;
     }
   }
-
   &__awards {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 53px; //zdjecia zle zrobione
+    gap: 53px;
     @media (max-width: $lg) {
       gap: 0;
     }
