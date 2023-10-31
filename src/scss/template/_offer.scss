@@ -344,6 +344,11 @@
     justify-content: center;
     align-items: center;
   }
+  &__review-medal{
+    @media (max-width: $sm){
+      display: none;
+    }
+  }
   &__review-content-box {
     display: flex;
     flex-direction: column;
